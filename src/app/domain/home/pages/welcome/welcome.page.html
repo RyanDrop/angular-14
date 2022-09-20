@@ -1,0 +1,18 @@
+<div class="welcome-form-group">
+  <ng-dynamic-form
+    [formConfigs]="testFields"
+    [formType]="testFormGroup"
+    (formInstance)="testFormGroup = $event"
+  >
+  </ng-dynamic-form>
+
+  <button
+    *ngIf="testFormGroup"
+    mat-raised-button
+    color="warn"
+    [disabled]="!testFormGroup.valid"
+    (click)="alert()"
+  >
+    Alert
+  </button>
+</div>

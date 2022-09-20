@@ -1,0 +1,14 @@
+<div ng-input>
+  <h3>{{ formConfig.label }}</h3>
+  <mat-form-field appearance="outline" floatLabel="never">
+    <mat-label>{{ formConfig.placeholder }}</mat-label>
+    <input
+      [formControlName]="formConfig.controlName"
+      matInput
+      type="text"
+      suffix="{{ formConfig.suffix }}"
+      prefix="{{ formConfig.prefix }}"
+      mask="{{ formConfig.mask }}"
+    />
+  </mat-form-field>
+</div>

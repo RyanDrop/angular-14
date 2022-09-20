@@ -3,11 +3,9 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  selector: 'ng-root',
-  template: `
-    <h1>Hello Angular 14!</h1>
-    <router-outlet></router-outlet>
-  `,
+  selector: 'ng-home-domain',
+  template: `<h1>Home</h1>
+    <router-outlet></router-outlet>`,
   imports: [RouterModule],
 })
-export class AppComponent {}
+export class HomeDomain {}
