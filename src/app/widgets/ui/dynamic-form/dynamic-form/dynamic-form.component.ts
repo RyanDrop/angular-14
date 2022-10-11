@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
-import { Timeout } from 'src/app/shared/decorators/timeout.decorators';
+import { Timeout } from 'src/app/shared/decorators/timeout.decorator';
 import { DEFAULT_LIB_INPUTS } from '../constants/input-components.constants';
 import { DynamicFieldDirective } from '../directives/dynamic-field.directive';
 import { DynamicFormConfig } from '../models/dynamic-forms.models';
